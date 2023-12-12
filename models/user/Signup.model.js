@@ -1,0 +1,43 @@
+const mongoose=require('mongoose')
+const signSchema=mongoose.Schema({
+    profile_image:{type:String},
+    logintype:{type:String},
+    photourl:{type:String},
+    background_image:{type:String},
+    firstname:{type:String},
+    lastname:{type:String},
+    email:{type:String},
+    password:{type:String},
+    jwttoken:{type:String},
+    //skills:[{type:String}],
+    otp:{type:String},
+    type:{type:String},
+    city:{type:String},
+    state:{type:String},
+    phone:{type:String},
+    instagram:{type:String},
+    twitter:{type:String},
+    facebook:{type:String},
+    gender:{type:String},
+    status:{type:String},
+    referral_code:{type:String},//invited token
+    face_Id:{type:Boolean},
+    transaction_pin:{type:String},
+    timeAvailable:{type:String},
+    passToken:{type:String},
+    //referraltoken:{type:String},
+    review:{type:String},
+    referral:{type:String},
+    kycstatus:{type:String},
+    usertoken:{type:String},//random user referaltoken generated
+    //referral_codestatus:{type:String},
+    completestatus:{type:String},
+    bio:{type:String},
+    deviceid:{type:String},
+    devicetype:{type:String},
+    devicetoken:{type:String},
+    address:{type:String},
+    Created_at:{type:Date, default:Date.now},
+    updated_at:{type:Date, default:Date.now}
+})
+module.exports=mongoose.model('signups',signSchema);
