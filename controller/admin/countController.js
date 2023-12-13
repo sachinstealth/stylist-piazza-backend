@@ -46,7 +46,7 @@ module.exports={
                     message:"found"
                 })
             } else {
-                //const countuser=await signDB.find({status:1,type:'user'}).count();
+               
                
                     return errorWithData(res,'Error');
                 
